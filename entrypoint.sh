@@ -1,4 +1,4 @@
 #!/bin/sh
 
 poetry install --no-ansi
-poetry run poe ${task}
+poetry run poe $1
