@@ -1,2 +1,2 @@
-# github-action-poetry-poe-test
-Github action to run python tests using poethepoet test with poetry
+# github-action-poetry-poe-task
+Github action to run python task using poethepoet test with poetry

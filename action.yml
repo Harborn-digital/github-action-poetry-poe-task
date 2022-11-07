@@ -1,0 +1,12 @@
+name: 'Poetry poe task'
+description: 'Run poe tasks within a python poetry project'
+inputs:
+  task:
+    description: 'Task to run'
+    required: true
+    default: 'test'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.task }}
