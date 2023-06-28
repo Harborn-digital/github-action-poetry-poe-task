@@ -1,10 +1,10 @@
-FROM python:3.8-slim-buster
+FROM python:3.10-slim-buster
 
 RUN apt-get update && \
     apt-get -y install python3-pip git && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
-RUN pip install poetry==1.2.* && pip install coverage
+RUN pip install poetry && pip install coverage
 
 COPY entrypoint.sh /entrypoint.sh
 
