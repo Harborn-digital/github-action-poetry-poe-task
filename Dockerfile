@@ -1,4 +1,5 @@
-FROM python:3.8-slim-buster
+ARG PYTHON_VERSION=3.8
+FROM python:${PYTHON_VERSION}-slim-buster
 
 RUN apt-get update && \
     apt-get -y install python3-pip git && \
