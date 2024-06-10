@@ -1,4 +1,7 @@
-FROM python:3.12-slim-bookworm
+# For Resilient Cities Network, which is currently not compatible with Python 3.12.4
+# due to an issue in langchain:
+# https://stackoverflow.com/questions/78593700/langchain-community-langchain-packages-giving-error-missing-1-required-keywor
+FROM python:3.12.3-slim-bookworm
 
 RUN apt-get update && \
     apt-get -y install python3-pip git && \
